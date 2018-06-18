@@ -10,9 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var price = Math.floor (Math.random() * 100) ; 
+  var price = Math.floor (Math.random() * 100) ;
   var itemObject = {itemName: item, itemPrice: Price} ;
-  cart.push (itemObject); 
+  cart.push (itemObject);
   return ${itemName} has been added to your cart.;
 
  }
@@ -20,7 +20,7 @@ function addToCart(item) {
 function viewCart() {
 if (!cart.length) {
   return "Your shopping cart is empty.";
-} 
+}
 else if (cart.length === 1) {
    string = string.concat(`${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}.`);
   }
@@ -34,7 +34,7 @@ else if (cart.length === 1) {
     string = string.concat(`and ${cart[cart.length - 1]["itemName"]} at $${cart[cart.length - 1]["itemPrice"]}.`);
   }
   return string;
-  
+
 
 
 function total() {
@@ -61,5 +61,3 @@ function placeOrder(cardNumber) {
   cart = [];
   return "Your total cost is $${orderCost}, which will be charged to the card ${cardNumber}.";
   }
-  
-
